@@ -1,0 +1,10 @@
+<div class="markdown-container">
+  <textarea
+    [(ngModel)]="wMd"
+    rows="10"
+    placeholder="Entrez du Markdown ici..."
+    class="markdown-textarea"
+  ></textarea>
+
+  <div class="markdown-preview" [innerHTML]="convert(wMd)"></div>
+</div>
