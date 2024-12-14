@@ -6,5 +6,7 @@
     class="markdown-textarea"
   ></textarea>
 
-  <div class="markdown-preview" [innerHTML]="convert(wMd)"></div>
+  <div class="markdown-preview">
+    <app-render-markdown [value]="wMd" />
+  </div>
 </div>
